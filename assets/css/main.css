@@ -1,0 +1,94 @@
+:root {
+    --font-size: 16px;
+    --font-color: #cecece;
+    --button-color: #b25aa7;
+    --accent-color: #f9a828;
+    --twitch-color: #a07ae6;
+    --parsec-color: #ff7678;
+    --transition: 0.3s;
+    --text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-size);
+    line-height: 1.5;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    background: var(--button-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color var(--transition);
+    text-shadow: var(--text-shadow);
+}
+
+.hidden {
+    display: none;
+}
+
+#chat {
+    height: 100vh;
+    overflow-y: hidden;
+    padding: 10px;
+}
+
+#setup {
+    background: #332e56;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message-container {
+    line-height: 1.5;
+}
+
+.message-user {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.message-channel {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.twitch {
+    color: var(--twitch-color);
+}
+
+.parsec {
+    color: var(--parsec-color);
+}
+
+.emoticon {
+    height: 20px;
+    width: auto;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}

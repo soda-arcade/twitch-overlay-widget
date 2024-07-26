@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Twitch Chat Overlay</title>
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/tmi.min.js"></script> 
+    <link rel="icon" href="#" type="image/x-icon">
+</head>
+<body>
+    <div id="chat" class="hidden"></div>
+    <form id="setup" action="" onsubmit="onFormSubmit(event)">
+        <div class="form-group">
+            <input type="text" name="channel" id="channel" placeholder="Channel Name">
+        </div>
+        <div class="form-group">
+            <input name="broadcast" type="checkbox" checked>
+            <label for="showJoinPart">Broadcast Twitch chat to Smash Soda</label>
+        </div>
+
+        <button id="connect" type="submit">Connect</button>
+    </form>
+</body>
+<script src="assets/js/chat.js"></script>
+</html>
